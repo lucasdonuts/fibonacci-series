@@ -1,5 +1,18 @@
 def fibonacci(num)
-  # type your code in here
+  return 0 if num == 0
+  return 1 if num == 1
+
+  num1 = 0
+  num2 = 1
+  sum = 0
+  
+  (num - 1).times do
+    sum = num1 + num2
+    num1 = num2
+    num2 = sum
+  end
+
+  sum
 end
 
 if __FILE__ == $PROGRAM_NAME
