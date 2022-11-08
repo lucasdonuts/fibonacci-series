@@ -1,6 +1,7 @@
 def fibonacci(num)
   return 0 if num == 0
   return 1 if num == 1
+  
 
   num1 = 0
   num2 = 1
